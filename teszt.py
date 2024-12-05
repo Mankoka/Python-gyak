@@ -12,3 +12,17 @@ elif 0 < homerseklet < 100:
 else:
     print("A víz gáz halmazállapotú (gőz).")
 
+
+homersekletC = 0
+def homerseklet():
+    if homersekletC <=0:
+        return "Szilárd halmazállapot"
+    elif homersekletC <100:
+        return "Folyékony halmazállapot"
+    else:
+        return "Légnemű halmazállapot"
+    
+
+homersekletC = int(input("kérek egy hőmérséklet értéket: "))
+
+print(homerseklet())
